@@ -23,6 +23,7 @@
             android:contentDescription="@string/profile_picture"
             android:src="@drawable/ic_default_profile" />
 
+        <!-- Maybe Add some text to Photo -->
         <TextView
             android:id="@+id/userNameTextView"
             android:layout_width="wrap_content"

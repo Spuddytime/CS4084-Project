@@ -2,4 +2,7 @@
     <string name="app_name">CS4084</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="user_name_placeholder">User Name</string>
+    <string name="take_photo_button_text">Take Profile Photo</string>
 </resources>
