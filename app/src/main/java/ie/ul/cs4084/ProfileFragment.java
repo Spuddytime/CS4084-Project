@@ -17,6 +17,8 @@ public class ProfileFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+
+    // TODO: Come Back to This
     private static final int CAMERA_REQUEST_CODE = 102;
     private static final int CAMERA_PERMISSION_CODE = 101;
     private Uri photoUri;  // This will hold the URI where the photo will be saved
