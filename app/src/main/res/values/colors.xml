@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="background_color">#E3F2FD</color> <!-- Light blue background -->
+    <color name="primary_color">#1E88E5</color> <!-- Primary blue for buttons and accents -->
+    <color name="primary_dark_color">#1565C0</color> <!-- Darker blue for the main background -->
+    <color name="text_color">#212121</color> <!-- Dark gray for text -->
+    <color name="hint_color">#757575</color> <!-- Light gray for hints -->
+
+
+
+
 </resources>
