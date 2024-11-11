@@ -35,7 +35,7 @@ public class ProfileFragment extends Fragment {
     private Uri photoUri;  // This will hold the URI where the photo will be saved
 
     public ProfileFragment() {
-        // Required empty public constructor
+        // empty public constructor
     }
 
     @Override
@@ -70,6 +70,7 @@ public class ProfileFragment extends Fragment {
     }
 
     @Override
+    // Hmm Seems to be deprecated Should still work i think
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == CAMERA_PERMISSION_CODE) {

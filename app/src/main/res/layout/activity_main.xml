@@ -8,10 +8,13 @@
     tools:context=".MainActivity">
 
     <!--Displaying Fragment in main -->
+
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="-16dp" />
 
     <TextView
         android:layout_width="wrap_content"
