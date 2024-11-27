@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         vpAdapter.addFragment(new fragment1(), "Main");
         vpAdapter.addFragment(new fragment2(), "Chat");
         vpAdapter.addFragment(new fragment3(), "Map");
+        vpAdapter.addFragment(new fragment4(),"Camera");
         viewPager.setAdapter(vpAdapter);
     }
 

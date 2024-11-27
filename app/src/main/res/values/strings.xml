@@ -20,4 +20,6 @@
     <string name="phone_number">Phone Number</string>
     <string name="create_account">Create Account</string>
     <string name="create_your_account">Create Your Account</string>
+    <string name="open_camera">Open Camera</string>
+    <string name="picture_taken">Picture Taken</string>
 </resources>
