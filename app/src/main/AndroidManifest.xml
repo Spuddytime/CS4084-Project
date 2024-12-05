@@ -21,6 +21,9 @@
             android:name=".Login"
             android:exported="true" />
         <activity
+            android:name=".ChatActivity"
+            android:exported="true" />
+        <activity
             android:name=".Registration"
             android:exported="true">
             <intent-filter>
