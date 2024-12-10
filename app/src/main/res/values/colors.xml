@@ -3,13 +3,23 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="background_color">#E3F2FD</color> <!-- Light blue background -->
     <color name="primary_color">#1E88E5</color> <!-- Primary blue for buttons and accents -->
     <color name="primary_dark_color">#1565C0</color> <!-- Darker blue for the main background -->
     <color name="text_color">#212121</color> <!-- Dark gray for text -->
     <color name="hint_color">#757575</color> <!-- Light gray for hints -->
+    <color name="chat_color_sender">#1E88E5</color>
+    <color name="chat_color_receiver">#7CB342</color>
+        <!-- Background Colors -->
+        <color name="background_color">#E3F2FD</color> <!-- Light Blue -->
+        <color name="toolbar_background">#64B5F6</color> <!-- Blue (lighter shade) -->
+        <color name="recycler_view_background">#BBDEFB</color> <!-- Soft Blue -->
+        <color name="bottom_layout_background">#42A5F5</color> <!-- Medium Blue -->
 
+        <!-- Text Colors -->
+        <color name="primary_text_color">#1E3A8A</color> <!-- Dark Blue -->
+        <color name="hint_text_color">#90CAF9</color> <!-- Light Blue for hint text -->
+        <color name="button_text_color">#FFFFFF</color> <!-- White -->
 
-
-
-</resources>
+        <!-- Button Background -->
+        <color name="button_background_color">#1976D2</color> <!-- Darker Blue -->
+    </resources>
