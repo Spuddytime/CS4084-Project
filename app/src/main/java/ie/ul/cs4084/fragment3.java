@@ -26,10 +26,12 @@ GoogleMap map;
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_fragment3, container, false);
     }
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        SupportMapFragment mapFragment = (SupportMapFragment) getParentFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view,savedInstanceState);
+        SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
+        if(mapFragment != null){
+            mapFragment.getMapAsync(this);
+        }
     }
 
 
