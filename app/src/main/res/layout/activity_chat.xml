@@ -1,32 +1,82 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".ChatActivity"
+    android:background="@color/background_color">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewMessages"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="10dp"
+        android:id="@+id/toolbar"
+        android:background="@color/toolbar_background">
 
-        <EditText
-            android:id="@+id/editTextMessage"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Type a message" />
-
-        <Button
-            android:id="@+id/buttonSend"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Send" />
-    </LinearLayout>
-</LinearLayout>
+            android:text="Username"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text_color"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/other_username"
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/bottom_layout"
+        android:id="@+id/recycler_view"
+        android:background="@color/recycler_view_background"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:id="@+id/bottom_layout"
+        android:background="@color/bottom_layout_background">
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@id/message_send_btn"
+            android:elevation="4dp"
+            android:hint="Write message here"
+            android:inputType="text"
+            android:textColor="@color/primary_text_color"
+            android:textColorHint="@color/hint_text_color"
+            android:padding="10dp"
+
+            android:focusableInTouchMode="true"
+            android:importantForAccessibility="yes" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:id="@+id/message_send_btn"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/button_text_color"
+            android:backgroundTint="@color/button_background_color"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
