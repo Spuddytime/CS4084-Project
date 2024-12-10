@@ -15,15 +15,15 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class fragment3 extends Fragment {
+public class fragment3 extends Fragment implements OnMapReadyCallback {
 GoogleMap map;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        SupportMapFragment mapFragment =(SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync((OnMapReadyCallback) this);
+        SupportMapFragment mapFragment =(SupportMapFragment) getParentFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
         return inflater.inflate(R.layout.fragment_fragment3, container, false);
 
 
