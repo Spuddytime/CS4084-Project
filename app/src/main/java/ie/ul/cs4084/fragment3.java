@@ -2,6 +2,8 @@ package ie.ul.cs4084;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -22,16 +24,18 @@ GoogleMap map;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        SupportMapFragment mapFragment =(SupportMapFragment) getParentFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
         return inflater.inflate(R.layout.fragment_fragment3, container, false);
-
-
     }
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        SupportMapFragment mapFragment = (SupportMapFragment) getParentFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+    }
+
+
     @Override
-    public void onMapReady(GoogleMap googleMap){
+    public void onMapReady(@NonNull GoogleMap googleMap){
         map = googleMap;
-        //to test
         LatLng Cork = new LatLng(51.8985,8.4756);
         map.addMarker(new MarkerOptions().position(Cork).title("Cork"));
         map.moveCamera(CameraUpdateFactory.newLatLng(Cork));
