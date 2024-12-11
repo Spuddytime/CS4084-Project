@@ -42,7 +42,7 @@
             android:exported="true"></activity>
 
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="map_key"/>
+            android:value="AIzaSyD7vq7102qqAH7YZNJQMquUe6-nG4IG71A"/>
     </application>
 
 </manifest>
