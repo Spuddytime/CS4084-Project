@@ -30,7 +30,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             mapFragment.getMapAsync(this);
         }
     }
-
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         map = googleMap;
