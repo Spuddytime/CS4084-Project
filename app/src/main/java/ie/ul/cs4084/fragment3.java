@@ -32,7 +32,10 @@ public class fragment3 extends Fragment implements OnMapReadyCallback {
         View view = inflater.inflate(R.layout.fragment_fragment3, container, false);
         Toolbar toolbar = view.findViewById(R.id.toolbar);
         //adding navigation from maps back to the app
-        toolbar.setNavigationOnClickListener(v -> { requireActivity().onBackPressed();});
+        toolbar.setNavigationOnClickListener(v -> { Intent intent = new Intent(requireContext(),ie.ul.cs4084.MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        startActivity(intent);
+        requireActivity().finish();});
         SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
         if (mapFragment != null) {
             mapFragment.getMapAsync(this);
